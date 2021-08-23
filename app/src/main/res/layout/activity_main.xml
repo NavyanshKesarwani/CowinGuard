@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3CAFA2"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="369dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/ubuntu_bold_italic"
+        android:text="Choose the Service You Are Looking For"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/optionone"
+        android:layout_width="374dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="72dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:onClick="checkVaccineSlots"
+        app:layout_constraintBottom_toTopOf="@+id/optiontwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/optionone" />
+
+    <ImageButton
+        android:id="@+id/optiontwo"
+        android:layout_width="372dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="200dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:onClick="vaccineCertificateDownload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/optiontwo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
